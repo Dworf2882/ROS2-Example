@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20241008-0912-Experimental"
+	Name="dworf"
+	Generator="ctest-3.22.1"
+	CompilerName="/usr/bin/g++"
+	CompilerVersion="11.4.0"
+	OSName="Linux"
+	Hostname="dworf"
+	OSRelease="6.5.0-45-generic"
+	OSVersion="#45~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon Jul 15 16:40:02 UTC 2"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="23"
+	ModelID="96"
+	ProcessorCacheSize="512"
+	NumberOfLogicalCPU="16"
+	NumberOfPhysicalCPU="8"
+	TotalVirtualMemory="976"
+	TotalPhysicalMemory="15394"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2819.55"
+	>
+	<Testing>
+		<StartDateTime>Oct 08 12:12 MSK</StartDateTime>
+		<StartTestTime>1728378744</StartTestTime>
+		<TestList/>
+		<EndDateTime>Oct 08 12:12 MSK</EndDateTime>
+		<EndTestTime>1728378744</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
