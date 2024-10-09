@@ -1,6 +1,6 @@
 import rclpy
 from rclpy.node import Node
-from geometry_msgs.msg import PoseStamped
+from drone_msgs.msg import Goal
 class point(Node):
     i = 0
     points = [(0.0,0.0,5.0),(10.0,10.0,10.0),(17.0,10.0,10.0),(0.0,0.0,5.0),(0.0,0.0,0.0)]
@@ -10,17 +10,18 @@ class point(Node):
         qos_profile.history = rclpy.qos.QoSHistoryPolicy.KEEP_LAST
         qos_profile.durability = rclpy.qos.QoSDurabilityPolicy.VOLATILE
         qos_profile.reliability = rclpy.qos.QoSReliabilityPolicy.BEST_EFFORT
-        self.pub = self.create_publisher(PoseStamped,"/point",qos_profile)
+        self.pub = self.create_publisher(Goal,"/point",qos_profile)
         self.tm = self.create_timer(2,self.prob)
 
     def prob(self):
         if self.i < len(self.points):
-            mes = PoseStamped()
-            mes.pose.position.x = self.points[self.i][0]
-            mes.pose.position.y = self.points[self.i][1]
-            mes.pose.position.z = self.points[self.i][2]
+            mes = Goal()
+            mes.pose.po
             self.pub.publish(mes)
             self.get_logger().info("DSdas")
+
+
+
             self.i += 1
             
 
